@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mainPage.js"></script>
+
+</head>
+<body>
+<div id="gui">
+    <p id="idOfUser"></p>
+    <p id="balance"></p>
+
+    <p>
+        Wpłać:
+        <input id="payment" type="text" name="payment">
+        <button onclick="paymentFun()">Wpłać</button>
+    </p>
+    <p>
+        Wypłać:
+        <input id="payoff" type="text" name="payoff">
+        <button onclick="payoffFun()">Wypłać</button>
+    </p>
+    <p>
+        Przelej do uzytkownika o id:
+        <input id="transferId" type="text" name="idToTransfer">
+        kwote:
+        <input id="transferCost" type="text" name="idToTransfer">
+        <button onclick="transferFun()">Przelej</button>
+    </p>
+    <p>
+        Historia jednego użytkownika (id):
+        <input id="oneHistoryId" type="text" name="oneHistory">
+        <button onclick="oneHistoryFun()">Pobierz historie</button>
+    </p>
+    <p>
+        Historia wszystkich:
+        <button onclick="allHistoryFun()">Pobierz historie wszystkich użytkowników</button>
+    </p>
+
+</div>
+<div id="response">
+</div>
+</body>
+</html>

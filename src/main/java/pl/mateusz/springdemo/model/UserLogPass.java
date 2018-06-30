@@ -1,9 +1,10 @@
 package pl.mateusz.springdemo.model;
 
-import javax.persistence.*;
-import java.util.HashSet;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity
 public class UserLogPass {
